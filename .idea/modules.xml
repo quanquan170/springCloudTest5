@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud-consumer-project/cloudconsumerproject.iml" filepath="$PROJECT_DIR$/cloud-consumer-project/cloudconsumerproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-consumer-user/cloudconsumeruser.iml" filepath="$PROJECT_DIR$/cloud-consumer-user/cloudconsumeruser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-provide-questionnaire/cloudprovidequestionnaire.iml" filepath="$PROJECT_DIR$/cloud-provide-questionnaire/cloudprovidequestionnaire.iml" />
+    </modules>
+  </component>
+</project>

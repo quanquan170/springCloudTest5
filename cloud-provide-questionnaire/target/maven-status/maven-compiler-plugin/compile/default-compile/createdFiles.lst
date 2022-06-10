@@ -1,0 +1,11 @@
+com\aim\questionnaire\dao\ModelEntityMapper.class
+com\aim\questionnaire\service\UserRoleService.class
+com\aim\questionnaire\dao\RootPermissionEntityMapper.class
+com\aim\questionnaire\dao\UserRootEntityMapper.class
+com\aim\questionnaire\dao\ProjectEntityMapper.class
+com\aim\questionnaire\dao\ParameterConfigEntityMapper.class
+com\aim\questionnaire\Questionnaire.class
+com\aim\questionnaire\service\UserService.class
+com\aim\questionnaire\service\ProjectService.class
+com\aim\questionnaire\dao\QuestionnaireEntityMapper.class
+com\aim\questionnaire\dao\UserEntityMapper.class

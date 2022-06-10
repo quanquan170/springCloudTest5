@@ -1,0 +1,45 @@
+server:
+  port:8886  #启动端口
+
+spring:
+  application:
+  name:cloud-api-commons   #服务名
+cloud:
+nacos:
+  config:
+    server-addr: localhost:8848
+    data-id: IAM
+#    discovery:
+#server-addr:127.0.0.1:8848   #nacos注册中心地址
+#公共配置与profiles选择无关
+mybatis:
+  typeAliasesPackage:com.aim.questionnaire.dao.entity
+  mapperLocations:classpath:mapper/*.xml
+#开启MyBatis的二级缓存
+configuration:
+  cache-enabled:true
+
+
+  #配置获取连接等待超时的时间
+  maxWait:60000
+  #配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+  timeBetweenEvictionRunsMillis:60000
+  #配置一个连接在池中最小生存的时间，单位是毫秒
+  minEvictableIdleTimeMillis:60000
+  validationQuery:SELECT 'x'
+  testWhileIdle:true
+  testOnBorrow:false
+  testOnReturn:false
+  #打开PSCache，并且指定每个连接上PSCache的大小
+  poolPreparedStatements:true
+  maxPoolPreparedStatementPerConnectionSize:5
+  #配置监控统计拦截的filters，去掉后监控界面sql无法统计
+  filters:stat,wall,slf4j
+  connectionProperties:druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+  useGlobalDataSourceStat:true
+  #durid监控配置
+  loginUsername:star
+  loginPassword:Star1234
+  resetEnable:false
+  rootPath:/druid/*
+

@@ -1,0 +1,45 @@
+server:
+  port:8886  #�����˿�
+
+spring:
+  application:
+  name:cloud-api-commons   #������
+cloud:
+nacos:
+  config:
+    server-addr: localhost:8848
+    data-id: IAM
+#    discovery:
+#server-addr:127.0.0.1:8848   #nacosע�����ĵ�ַ
+#����������profilesѡ���޹�
+mybatis:
+  typeAliasesPackage:com.aim.questionnaire.dao.entity
+  mapperLocations:classpath:mapper/*.xml
+#����MyBatis�Ķ�������
+configuration:
+  cache-enabled:true
+
+
+  #���û�ȡ���ӵȴ���ʱ��ʱ��
+  maxWait:60000
+  #���ü����òŽ���һ�μ�⣬�����Ҫ�رյĿ������ӣ���λ�Ǻ���
+  timeBetweenEvictionRunsMillis:60000
+  #����һ�������ڳ�����С�����ʱ�䣬��λ�Ǻ���
+  minEvictableIdleTimeMillis:60000
+  validationQuery:SELECT 'x'
+  testWhileIdle:true
+  testOnBorrow:false
+  testOnReturn:false
+  #��PSCache������ָ��ÿ��������PSCache�Ĵ�С
+  poolPreparedStatements:true
+  maxPoolPreparedStatementPerConnectionSize:5
+  #���ü��ͳ�����ص�filters��ȥ�����ؽ���sql�޷�ͳ��
+  filters:stat,wall,slf4j
+  connectionProperties:druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+  useGlobalDataSourceStat:true
+  #durid�������
+  loginUsername:star
+  loginPassword:Star1234
+  resetEnable:false
+  rootPath:/druid/*
+
